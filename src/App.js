@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import { About } from './About';
 import './App.css';
 import { Error } from './Error';
@@ -7,6 +7,7 @@ import { ProductDetails } from './ProductDetails';
 import { Products } from './Products';
 
 function App() {
+  const navigate = useNavigate()
   return (
     <div>
       <h1>WellCome</h1>
@@ -24,6 +25,11 @@ function App() {
         {"    "}
         {"    "}
         <Link to="products/laptop">Laptop</Link>
+        {"    "}
+        {"    "}
+        <button onClick={()=>{navigate("home")}}>
+          Home
+        </button>
       </div>
       <Routes>
         <Route path="/"></Route>
