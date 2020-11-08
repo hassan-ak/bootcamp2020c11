@@ -3,6 +3,7 @@ import { About } from './About';
 import './App.css';
 import { Error } from './Error';
 import { Home } from './Home';
+import { ProductDetails } from './ProductDetails';
 import { Products } from './Products';
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         <Route path="/"></Route>
         <Route path="about" element={<About></About>}></Route>
         <Route path="home" element={<Home></Home>}></Route>
-        <Route path="products/:productId" element={<Products></Products>}></Route>
+        <Route path="products" element={<Products></Products>}>
+          <Route path=":productId" element={<ProductDetails></ProductDetails>}></Route>
+        </Route>
         <Route path="*" element={<Error></Error>}></Route>
       </Routes>
     </div>
