@@ -30,10 +30,10 @@ export default function Footer() {
 
   return (
     <React.Fragment>
-      <AppBar position="fixed" color="transparent" className={classes.appBar}>
+      <AppBar position="static" color="transparent" className={classes.appBar}>
         <Toolbar>
           <div className={classes.grow} />
-          <Typography variant="body1" className={classes.title}>
+          <Typography variant="h6" className={classes.title}>
             by: Hassan Ali Khan
           </Typography>
         </Toolbar>
