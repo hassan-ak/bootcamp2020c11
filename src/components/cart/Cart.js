@@ -1,11 +1,10 @@
 import React from 'react'
-import Footer from '../footer/Footer'
 import Header from '../header/Header'
-import './Products.css'
+import Footer from '../footer/Footer'
 
-export const Products = () => {
+export const Cart = () => {
     return (
-        <div className="productsContainer">
+        <div>
             <Header></Header>
             <Footer></Footer>
         </div>
