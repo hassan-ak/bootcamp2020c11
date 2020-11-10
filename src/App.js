@@ -1,10 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { ErrorPage } from './components/errorPage/ErrorPage';
+import { Home } from './components/home/Home';
 
 function App() {
   return (
-    <div>
-      Hello World
-    </div>
+    <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }
 
