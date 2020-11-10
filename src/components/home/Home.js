@@ -5,6 +5,7 @@ import './Home.css';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import Footer from '../footer/Footer'
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -35,6 +36,8 @@ export const Home= () => {
             Proceed to store
         </Button>
       </Link>
+
+      <Footer></Footer>
 
     </div>
   );

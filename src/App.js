@@ -6,11 +6,14 @@ import { Products } from './components/products/Products';
 
 function App() {
   return (
+    <div>
     <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="products" element={<Products/>} />
             <Route path="*" element={<ErrorPage />} />
-    </Routes>
+    </Routes>      
+    </div>
+
   );
 }
 
