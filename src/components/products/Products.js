@@ -23,7 +23,7 @@ export const Products = () => {
                     </Link> 
                 </Grid>
                 <Grid item xs={10} md={4} component={Card} className="card ladies"> 
-                    <Link className = "linkP" to="/products/gents" >
+                    <Link className = "linkP" to="/products/ladies" >
                     <CardContent>
                         <img src={ladiesimg} className="img" alt="ladies" align="center"/>
                         <Typography variant= "h5" color="textSecondary" align = "center" gutterBottom >
@@ -37,29 +37,3 @@ export const Products = () => {
         </div>
     )
 }
-
-
-{/* <div className="cards">
-                <Grid container spacing={3} justify="center" className="card">
-                    <Grid item xs={8} md={3} component={Card} className="cardGents">    
-                        <Link className = "link" to="/products/gents" >
-                            <CardContent>
-                                <img src={gentsimg} className="gentsImg" alt="ladies" />
-                                <Typography variant= "h5" color="textSecondary" align = "center" gutterBottom >
-                                    Gents
-                                </Typography>
-                            </CardContent>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={8} md={3} component={Card} className="cardGents"> 
-                        <Link className = "link" to="/products/ladies" >
-                            <CardContent>
-                                <img src={ladiesimg} alt="ladies"/>
-                                <Typography variant= "h5" color="textSecondary" align = "center" gutterBottom>
-                                    Ladies
-                                </Typography>
-                            </CardContent>
-                        </Link>
-                    </Grid>
-                </Grid>   
-            </div> */}

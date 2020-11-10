@@ -30,7 +30,7 @@ export const Home= () => {
       <Link to="products" className="link">
         <Button
           variant="contained"
-          color="white"
+          color="default"
           className={classes.button}
           endIcon={<ArrowForwardIcon/>}>
             Proceed to store
