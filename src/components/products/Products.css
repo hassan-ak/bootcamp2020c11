@@ -5,7 +5,6 @@
     justify-content: center;
     min-height: 100vh;
     margin: 30px 30px;
-    min-height: 100vh;
   }
 
   .card {
@@ -64,4 +63,17 @@
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 0pt;
+}
+
+
+.product_txt {
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.main_div {
+  background-color: aliceblue;
+  height: 80px;
+  margin-top: 70px;
 }

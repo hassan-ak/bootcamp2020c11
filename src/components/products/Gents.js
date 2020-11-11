@@ -79,7 +79,6 @@ export const Gents = () => {
             </Grid>
           ))}
       </Grid>
-      <Footer/>
 
         </div>
         

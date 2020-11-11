@@ -33,6 +33,7 @@ const useStyles = makeStyles({
 
 export const Ladies = () => {
     const context = useContext(DataContext);
+    console.log(context.products)
     const ladiesProducts = context.ladiesProducts;
 
     const classes = useStyles();
@@ -79,7 +80,6 @@ export const Ladies = () => {
             </Grid>
           ))}
       </Grid>
-      <Footer/>
 
         </div>
         
