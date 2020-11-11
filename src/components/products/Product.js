@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import DataContext from '../../functionalComponents/DataContext'
-// import { CartContext } from '../../../States/Cart/CartContext'
+import { CartContext } from '../../functionalComponents/CartContext'
 
 const useStyles = makeStyles({
     root: {
@@ -36,6 +36,11 @@ export const Product = () => {
     const productsList = context.products
     const { slug } = useParams();
     const product = productsList.find((p) => p.slug === slug);
+    const { addToCart } = useContext(CartContext); 
+    function handleAddToCart(e) {
+        e.stopPropagation();
+        addToCart( product );
+    }
     return (
         <div>
         <div className="main_div">
@@ -70,7 +75,7 @@ export const Product = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" className={classes.btn}>
+        <Button size="small" onClick={ handleAddToCart } className={classes.btn}>
           Add To Cart
         </Button>
       </CardActions>
