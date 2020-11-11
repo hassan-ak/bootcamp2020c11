@@ -9,10 +9,12 @@ import { Product } from './components/products/Product';
 import { Products } from './components/products/Products';
 import { SelectedProduct } from './components/products/SelectedProduct';
 import { GlobalDataProvider } from './functionalComponents/DataProvider';
+import  CartContextProvider  from './functionalComponents/CartContext';
 
 function App() {
   return (
     <GlobalDataProvider>
+      <CartContextProvider>
     <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="products" element={<Products/>}/>
@@ -26,7 +28,8 @@ function App() {
             </Route>
             <Route path="cart" element={<Cart/>} />
             <Route path="*" element={<ErrorPage />} />
-    </Routes>      
+    </Routes>     
+    </CartContextProvider> 
     </GlobalDataProvider>
 
   );
